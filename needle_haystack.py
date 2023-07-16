@@ -42,18 +42,15 @@ def strStr(haystack, needle):
                                             # of the next letter in needle
                     live_combos_copy.append(idx + 1) # combo remains live
             live_combos = live_combos_copy[:]
-    live_combos = live_combos_copy
-    final_combos = []
-    for idx in live_combos:
-        if (idx + 1) in track_appearances[needle[-1]]:
-            final_combos.append(idx + 1)
+
     # evaluate
-    if len(final_combos) == 0:
+    if len(live_combos) == 0:
         return - 1
     else:
         best_end = min(live_combos)
         first_occurrence = best_end + 1 - len(needle)
     return first_occurrence
 
-##TEST
-num = strStr("neatochpsychicphanochic", "chic")
+### TESTS - stepped through in debugger
+num = strStr("longishstringwithishrepeatedthreeishtimes", "ish")
+num2 = strStr("sadbudsad", "sad")
