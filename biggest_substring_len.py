@@ -3,7 +3,7 @@ def lengthOfLongestSubstring(s):
     :type s: str
     :rtype: int
     """
-    
+
     # Short-circuit trivial cases
     if len(s) == 0:
         return 0
@@ -36,5 +36,3 @@ def lengthOfLongestSubstring(s):
         substring_lengths.append(len(st))
     
     return max(substring_lengths)
-    
-
