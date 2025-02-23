@@ -1,1 +1,1 @@
-This is a repository for my solutions to some of the more interesting practice problems I've been doing, on Leetcode and HackerRank.
+This is a repository for miscellaneous practice problem solutions.
